@@ -8,28 +8,26 @@ Jalankan dependencies untuk css dengan npm
 
     npm install todomvc-app-css --save
 
-Cara menjalankan Django Todo
+Install depedencies
 
-    Install depedencies
+    pip install -r requirements.txt
 
-pip install -r requirements.txt
+Jalankan migrasi database
 
-    Jalankan migrasi database
+    python manage.py migrate
 
-python manage.py migrate
+Buat superuser
 
-    Buat superuser
+    python manage.py createsuperuser
 
-python manage.py createsuperuser
+Jalankan server
 
-    Jalankan server
+    python manage.py runserver
 
-python manage.py runserver
+Buka browser di
 
-    Buka browser di
+    http://localhost:8000/todo
 
-http://localhost:8000/todo
+Untuk login ke admin di
 
-    Untuk login ke admin di
-
-http://localhost:8000/admin
+    http://localhost:8000/admin
