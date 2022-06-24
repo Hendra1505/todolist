@@ -1,16 +1,20 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from .models import Todo
 
 # Create your views here.
 def index(request):
-    return render(request, 'todo/index.html')
+    items = Todo.objects.filter(status=False).order_by('-id')
+    return render(request, 'todo/index.html', {'items': items})
 
 def done(request):
-    return render(request, 'todo/index.html')
+    items = Todo.objects.filter(status=True).order_by('-id')
+    return render(request, 'todo/index.html', {'items': items})
 
 def pending(request):
-    return render(request, 'todo/index.html')
+    items = Todo.objects.filter(status=False).order_by('-id')
+    return render(request, 'todo/index.html', {'items': items})
 
 def delete_all(request):
     return render(request, 'todo/index.html')
