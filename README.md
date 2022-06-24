@@ -1,5 +1,5 @@
 # todolist
-Project Todo List ini dibuat dengan Framework Python, bernama Django dengan Version Django 4.0.5
+Project Todo List ini dibuat dengan Framework Python, bernama Django dengan Version Django 4.0.5,
 Referensi Project ini berasal dari playlist youtube https://www.youtube.com/playlist?list=PL8bBYpHH3RI6Pp-kA9lmVt18ZZ2TWmmtI
 
 Langkah untuk menjalankan project Django :
